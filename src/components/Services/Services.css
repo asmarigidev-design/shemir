@@ -1,0 +1,28 @@
+/* Services Section */
+.services-section {
+    background: #ed8765;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-item {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+    .service-item:hover {
+        background: #fd1d2e69;
+        color: white;
+        transform: translateY(-5px);
+    }
+
+    .service-item h3 {
+        margin-bottom: 1rem;
+    }

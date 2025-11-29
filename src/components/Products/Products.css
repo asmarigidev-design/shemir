@@ -1,0 +1,250 @@
+﻿
+
+
+
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*Products section بخش محصولات */
+.products-section {
+    padding: 80px 0;
+    background: #ed8765;}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+    .section-header h2 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 15px;
+    }
+
+    .section-header p {
+        font-size: 1.1rem;
+        color: #7f8c8d;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+/*Product card گرید محصولات */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* کارت محصول */
+.product-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+/*Product Image Container کانتینر تصویر محصول */
+.product-image-container {
+    position: relative;
+    height: 180px; 
+    overflow: visible; 
+    margin-bottom: 40px;
+}
+
+.product-image {
+    height: 150%;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+    .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+/*Circular image wrapper رپر تصویر دایره‌ای */
+.circular-image-wrapper {
+    position: absolute;
+    bottom: -150px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    z-index: 10;
+}
+
+.circular-image-border {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: white;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .circular-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/*Product content محتوای محصول */
+.product-content {
+    padding: 120px 25px 25px; 
+    text-align: center;
+}
+
+    .product-content h3 {
+        font-size: 1.4rem;
+        color: #c30d26;
+        margin-bottom: 12px;
+    }
+
+    .product-content p {
+        color: #555;
+        margin-bottom: 20px;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .product-content ul {
+        list-style: none;
+        text-align: right;
+    }
+
+    .product-content li {
+        padding: 8px 0;
+        color: #7e1418;
+        position: relative;
+        padding-right: 20px;
+    }
+
+        .product-content li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+        }
+
+/* Responsiveرسپانسیو */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .product-content {
+        padding: 120px 15px 20px;
+    }
+
+    .product-image-container {
+        height: 160px;
+        margin-bottom: 35px;
+    }
+
+    .circular-image-wrapper {
+        width: 150px;
+        height: 150px;
+        bottom: -150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .product-image-container {
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    .circular-image-wrapper {
+        width: 90px;
+        height: 90px;
+        bottom: -35px;
+    }
+}
+.product-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-content li {
+    padding: 0.4rem 0;
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+    .product-content li::before {
+        content: '✓';
+        position: absolute;
+        right: 0;
+        color: #8B4513;
+        font-weight: bold;
+    }
+@media (max-width: 465px) {
+    .circular-image-wrapper {
+        width: 110px;
+        height: 110px;
+        bottom: -125px;
+    }
+
+    .circular-image-border {
+        padding: 5px;
+    }
+}
+.shop-button {
+    background: linear-gradient(135deg, #ff6f61, #c30d26 );
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 12px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+    .shop-button:hover {
+        background: linear-gradient(135deg, #d6336c, #ff6f61);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }

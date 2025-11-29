@@ -1,0 +1,240 @@
+﻿.shemir-slider {
+    direction: rtl;
+    font-family: 'Vazir', 'IRANSans', 'Tahoma', sans-serif;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+    .slide.active {
+        opacity: 1;
+    }
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+}
+
+.slide-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 600px;
+    padding: 0 80px;
+    text-align: right;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    color: #f8f8f8;
+}
+
+.slide-subtitle {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: #e6c9a8;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.slide-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    max-width: 90%;
+}
+
+.slide-cta {
+    background: linear-gradient(65deg, #d4af37, #c30d26 );
+    color: #2c2c2c;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+    .slide-cta:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+    }
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}
+
+    .slider-nav:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-50%) scale(1.1);
+    }
+
+
+.slider-indicators {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .indicator.active {
+        background: #c30d26;
+        transform: scale(1.3);
+    }
+
+    .indicator:hover {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+/* رسپانسیو */
+@media (max-width: 768px) {
+    .shemir-slider {
+        height: 60vh;
+    }
+
+    .slide-content {
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    .slide-title {
+        font-size: 2.2rem;
+    }
+
+    .slide-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .slide-description {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .slider-nav {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+
+        .slider-nav.prev {
+            right: 15px;
+        }
+
+        .slider-nav.next {
+            left: 15px;
+        }
+}
+
+@media (max-width: 480px) {
+    .shemir-slider {
+        height: 50vh;
+    }
+
+    .slide-content {
+        padding: 0 20px;
+    }
+
+    .slide-title {
+        font-size: 1.8rem;
+    }
+
+    .slide-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .slide-description {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .slide-cta {
+        padding: 3px 5px;
+        font-size: 1rem;
+        margin-bottom:30px;
+    }
+}
+.shemir-slider {
+    position: relative;
+    z-index: 20; /*A number higher than the previous background. عددی بالاتر از بک‌گراند قبلی */
+}
+
+.slide {
+    z-index: 1; 
+}
+
+

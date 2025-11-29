@@ -1,0 +1,306 @@
+﻿.loading-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a0a0a 100%);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    direction: rtl;
+}
+
+/*Floating particles ذرات شناور */
+.floating-particle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, #c30d26, transparent);
+    animation: float 6s infinite ease-in-out;
+    opacity: 0.6;
+}
+
+.particle-1 {
+    width: 120px;
+    height: 120px;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.particle-2 {
+    width: 80px;
+    height: 80px;
+    top: 70%;
+    right: 15%;
+    animation-delay: 2s;
+}
+
+.particle-3 {
+    width: 60px;
+    height: 60px;
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+.particle-4 {
+    width: 100px;
+    height: 100px;
+    top: 30%;
+    right: 25%;
+    animation-delay: 1s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: translateY(-20px) scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.loading-content {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    padding: 40px 30px;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(195, 13, 38, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(195, 13, 38, 0.3);
+    position: relative;
+    z-index: 10;
+}
+
+/*Loading circle دایره لودینگ */
+.circle-loader {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
+}
+
+.progress-ring {
+    transform: rotate(-90deg);
+}
+
+.progress-ring-background {
+    transition: stroke 0.3s ease;
+}
+
+.progress-ring-circle {
+    transition: stroke-dashoffset 0.35s ease;
+    transform-origin: 50% 50%;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+/*Content of the center of the circle محتوای مرکز دایره */
+.circle-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+    .circle-content.pulse {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+
+.logo-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    background: linear-gradient(135deg, #c30d26 0%, #e74c3c 50%, #7e1418 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(195, 13, 38, 0.5), inset 0 2px 5px rgba(255, 255, 255, 0.2);
+    animation: logoPulse 2s infinite alternate;
+}
+
+@keyframes logoPulse {
+    0% {
+        box-shadow: 0 10px 25px rgba(195, 13, 38, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 15px 35px rgba(195, 13, 38, 0.8);
+    }
+}
+
+.logo-inner {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.percentage {
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ffffff, #ed8765);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 10px rgba(237, 135, 101, 0.3);
+}
+
+/*Texts متن‌ها */
+.loading-text {
+    margin-bottom: 30px;
+}
+
+.loading-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.title-word {
+    background: linear-gradient(45deg, #c30d26, #ed8765);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    animation: titleGlow 2s infinite alternate;
+}
+
+.word-1 {
+    animation-delay: 0s;
+}
+
+.word-2 {
+    animation-delay: 0.5s;
+}
+
+@keyframes titleGlow {
+    0% {
+        text-shadow: 0 0 10px rgba(195, 13, 38, 0.5);
+    }
+
+    100% {
+        text-shadow: 0 0 20px rgba(195, 13, 38, 0.8);
+    }
+}
+
+.loading-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/*Dynamic points نقاط پویا */
+.dynamic-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #c30d26;
+    animation: dotBounce 1.4s infinite ease-in-out;
+}
+
+    .dot:nth-child(1) {
+        animation-delay: -0.32s;
+    }
+
+    .dot:nth-child(2) {
+        animation-delay: -0.16s;
+    }
+
+    .dot:nth-child(3) {
+        animation-delay: 0s;
+    }
+
+@keyframes dotBounce {
+    0%, 80%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    40% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+/*Status bar نوار وضعیت */
+.status-bar {
+    background: rgba(195, 13, 38, 0.2);
+    border-radius: 10px;
+    height: 6px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.status-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #c30d26, #ed8765);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+    .status-progress::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+        animation: shimmer 2s infinite;
+    }
+
+.status-text {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+/*Responsive ریسپانسیو */
+@media (max-width: 768px) {
+   
+
+    .logo-inner {
+        font-size: 20px;
+    }
+
+    .loading-title {
+        font-size: 28px;
+    }
+
+    .percentage {
+        font-size: 24px;
+    }
+}
+

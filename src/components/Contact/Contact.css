@@ -1,0 +1,116 @@
+﻿.footer {
+    color: #7e1418;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: #7e1418;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+    .footer-links a {
+        text-decoration: none;
+        transition: color 0.3s ease;
+        color: #7e1418;
+    }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #7e1418;
+}
+
+.footer-logo {
+    line-height: 2;
+}
+
+.contact-form form {
+    direction: rtl;
+    text-align: right;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c30d26;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    direction: rtl;
+    text-align: right;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.social-links h4 {
+    color: #7e1418;
+}
+
+.footer-links a {
+    color: #c30d26;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+    .footer-links a:hover {
+        color: #7e1418;
+    }
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        background: #ed8765;
+    }
+
+    .footer-links {
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-logo {
+        text-align: center;
+        line-height: 2;
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .footer-links a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #c30d26;
+            transition: color 0.3s ease;
+        }
+
+            .footer-links a:hover {
+                color: #7e1418;
+            }
+
+        .footer-links svg {
+            font-size: 1em;
+        }
+}
