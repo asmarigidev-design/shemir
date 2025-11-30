@@ -104,8 +104,8 @@ const Loading = ({ onLoadingComplete }) => {
                 {/* Content of the center of the circle متن و اطلاعات */}
                 <div className="loading-text">
                     <h1 className="loading-title">
-                        <span className="title-word word-1">Shemir</span>
-                        <span className="title-word word-2">Kanch</span>
+                        <span className="title-word word-1">Kanch</span>
+                        <span className="title-word word-2">Shemir</span> 
                     </h1>
 
                     {/*Dynamic points نقاط پویا */}
