@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\public",
+    "\\public\\fonts",
+    "\\public\\fonts\\IranNastaliq",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\Pages"
   ],
+  "SelectedNode": "\\public\\fonts\\IranNastaliq",
   "PreviewInSolutionExplorer": false
 }

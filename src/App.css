@@ -1,9 +1,30 @@
-﻿* {
+﻿@font-face {
+    font-family: 'IranNastaliq';
+    src: url('./fonts/IranNastaliq.woff2') format('woff2'),
+         url('./fonts/IranNastaliq.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .nastaliq-text {
+    font-family: 'Noto Nastaliq Urdu', 'IranNastaliq', serif;
+    font-size: 3.2rem;
+    line-height: 1.8;
+    direction: rtl;
+    text-align: right;
+  }
+  
+  
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Vazir', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+  
+
 
 html {
     overflow-x: hidden;
@@ -531,8 +552,8 @@ section {
 }
 
 .nastaliq-text {
-    font-family: 'Noto Nastaliq Urdu', 'IranNastaliq', serif;
-    font-size: 3.2rem;
+    font-family: 'Noto Nastaliq Urdu', 'IranNastaliq', 'JF Flat', 'B Nazanin', serif;
+    font-size: 2.2rem;
     display: block;
     line-height: 1.8;
     direction: rtl;
@@ -545,7 +566,7 @@ section {
 }
 
 .typewriter-text {
-    font-size: 3.4rem;
+    font-size: 2.2rem;
     color: white;
     text-align: center;
     font-weight: 300;
@@ -1122,6 +1143,12 @@ section {
             right: 0;
         }
 
+
+    .video-overlay {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+
     .nav-toggle {
         display: flex;
     }
@@ -1131,17 +1158,14 @@ section {
         text-align: center;
     }
 
-    .hero-title {
-        font-size: 3.5rem;
-    }
-
+   
     .typewriter-text {
-        font-size: 2.0rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
     .hero-subtitle {
-        font-size: 2rem;
+        font-size: 1.8rem;
         opacity: 0.9;
     }
 
@@ -1182,6 +1206,42 @@ section {
         clip-path: polygon(0% 100px, 50% 8%, 100% 100px, 100% 100%, 0% 100%);
     }
 }
+
+
+@media (max-width: 480px) {
+    .typewriter-text {
+        font-size: 1.5rem;
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+        max-height: 2.8em;
+        line-height: 1.4;
+        margin-top: 2rem; /* فاصله کمتر در موبایل کوچک */
+
+    }
+
+    
+}
+
+/* respon */
+@media (max-width: 360px) {
+    .typewriter-text {
+        font-size: 1.25rem;
+        padding: 0 8px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+        max-height: 2.8em;
+        line-height: 1.5;
+        margin-top: 1.7rem;
+
+    }
+}
+
 
 .features-grid {
     display: grid;

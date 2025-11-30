@@ -55,7 +55,7 @@ const HomeSection = ({ scrollToSection }) => {
 
             <div className="section-content home-content">
                 <div className="hero-content">
-                    <div className="hero-text ">
+                    <div className="hero-text nastaliq ">
                         <h1 className="hero-title animate-fade-in nastaliq-text">
                             گروه قدرتمند <span className="highlight ">شمیر کانچ</span>
                         </h1>

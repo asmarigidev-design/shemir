@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\shemirr\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\shemirr\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\shemirr\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\shemirr\\public\\fonts\\IranNastaliq\\read me!.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\fonts\\IranNastaliq\\read me!.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\shemirr\\public\\fonts\\IranNastaliq\\fontnegar.ir.url||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\fonts\\IranNastaliq\\fontnegar.ir.url||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\shemirr\\src\\components\\Pages\\HomeSection.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\Pages\\HomeSection.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.css",
+              "DocumentMoniker": "E:\\shemirr\\src\\index.css",
+              "RelativeDocumentMoniker": "src\\index.css",
+              "ToolTip": "E:\\shemirr\\src\\index.css",
+              "RelativeToolTip": "src\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-29T21:20:27.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "read me!.txt",
+              "DocumentMoniker": "E:\\shemirr\\public\\fonts\\IranNastaliq\\read me!.txt",
+              "RelativeDocumentMoniker": "public\\fonts\\IranNastaliq\\read me!.txt",
+              "ToolTip": "E:\\shemirr\\public\\fonts\\IranNastaliq\\read me!.txt",
+              "RelativeToolTip": "public\\fonts\\IranNastaliq\\read me!.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-29T21:18:02.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "fontnegar.ir.url",
+              "DocumentMoniker": "E:\\shemirr\\public\\fonts\\IranNastaliq\\fontnegar.ir.url",
+              "RelativeDocumentMoniker": "public\\fonts\\IranNastaliq\\fontnegar.ir.url",
+              "ToolTip": "E:\\shemirr\\public\\fonts\\IranNastaliq\\fontnegar.ir.url",
+              "RelativeToolTip": "public\\fonts\\IranNastaliq\\fontnegar.ir.url",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATjSURBVDhPdZTLjxRVFMa/ele/e/rB9AADPRkYhuADMaMGdSFqWCAYY8IC3bA0btixcuXef0DiH2BCQkyIJigiPgiCCZNhwGFgHt0z/Zru6qrqej9ueRqCcWOlT99K3XN/\u002Be537j0c/uf54turh2cW3n5Rc6JpbRRgoOnry9e\u002BW1y5drm1c/\u002B2TynsWeZ/niRJ/gV\u002BeP48/9aZM7NJNnWyZW0tFOt75zjVLeveQO4Q0As3/Z3tibberq3azeiOvnLrB\u002BOPyz1m62N48owCCOO/Ty9cKB7/\u002BNQ7\u002BUOVc0HJOaNUlGNqCjMib1QZ1ygE7K\u002BCw\u002B6WBxEmh\u002ByFaVt8vc7lJveHvBwl1sCBo3uEeapYOHn2rHj680/ew5743JazdMqKmwezipqppItCXslAFDxEbAVWuIrOqCj2zCM505mvJZJ6IC6wTDIaWDA0HaHzFCp8ff2nfU1u\u002BeLS4PsTerBc3ZVVUMvWUU3vRkHZBYHPwPI9aK6DnnMEuvMSPLsohE4jzTL3DoBJMaxoAK3ZJ6DH91j42e/bVxZa9m9FQdgiN0z4cQFOaICDhqKURTl9inK/pD19QGMFENtA6jrlXkqh0nsXlcJJmthNoQjZExe/utNs7AnRklOqDp78jRMPo\u002BAxdH8LRiBj5L\u002BGDaOKzeEkKewijn6mzf3CIXzCkR8KTDjQxA48vcUvrsWz7daC0tf3o2cHoAqjYfyKteFdPNYsPNImsDrMYnuUg\u002BHmEIY2KXtIYiiikMA9GYozhdzkPH0s8e2enXaNGd4w6\u002BgYKi0cYF3XCChhVZvFg94cFrvAhsZgWyGSYEAgsibUgSAHIZI4gZPyUDJ7nwJHugXmcbCMGfS0OlojDmvaHJ5oxwn2Mu51qljuJDQXI7SHgL9OsAaNCpWgBjnYA5lNSAK4HAHzPFyXJh2ExlGYvXPodj9CdziLntFF11jCYLhJ1lCqTefXu0uw26Rwk0aT/F6DyrtQIHGIIVGWysuIwDkjgH6xNo\u002BgexZB7314RkRH6yqpv4TEvglYOwSlezCaAsxZ8C7ZxnahgCmoUYYhDCIC8nxKhss5FoNBRIP81iYppsEMiUCrpOoKefUNwZZonkRorwKD05DM45hg8wStJ5KvhszRqFqI\u002BExBbQmBF8IkmkmGj8MIaGH1GcAmz1xSaNI2jZhgM\u002BAHb0Ix30CZHYHsT8XMip3E6Y6NcfhsLX1bEpMR59gJdILqZPxQA3bmCDpNkBLQf4VAk/ROt2vUhWDrULw0Cuxg4mspzxrQAm\u002BHPIEuKPXDQ2Rrx\u002BCxMgxLYj6p8xhEvgmZ24Hg1hB3T5CHMjjfh5owlKlzTBWr8D0hbq3daujbdx4koXGfgA\u002BEcNi241xJ4nKVkqrmyzkGSWEJcoqJNGRIwT4qwD7kRJGuYAq1fB6lTIqFgRO21m\u002B2jO1bf0dWcxFJRCZjg4CdMI4DI6ECCoosK5KaSqlZZSIt8QWpwmX53cjLEyhn08iqaiJSZ3TNhtnf\u002BrOtNW88jEbri2DuIsFWKPrjfsiSQcOMjVY3jEw9UkRJTqfljCDHKV6JU4IYpkWEMh94rtN3e52lfnv9xobR\u002BPF\u002BYjfv0dV5DmtRuM879niko48SRGU/KoeOcYX6UVEp7hUh0gX2\u002BcAZBrHZGMHe6iPQx4s3KB5RUPkxbl0OAPYPIfWq4AvaJgUAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-11-29T21:13:07.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.css",
+              "DocumentMoniker": "E:\\shemirr\\src\\App.css",
+              "RelativeDocumentMoniker": "src\\App.css",
+              "ToolTip": "E:\\shemirr\\src\\App.css",
+              "RelativeToolTip": "src\\App.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-29T21:11:45.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeSection.js",
+              "DocumentMoniker": "E:\\shemirr\\src\\components\\Pages\\HomeSection.js",
+              "RelativeDocumentMoniker": "src\\components\\Pages\\HomeSection.js",
+              "ToolTip": "E:\\shemirr\\src\\components\\Pages\\HomeSection.js",
+              "RelativeToolTip": "src\\components\\Pages\\HomeSection.js",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-29T21:09:02.318Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
